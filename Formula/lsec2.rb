@@ -2,9 +2,9 @@
 class Lsec2 < Formula
   desc "List view of aws ec2 instances"
   homepage "https://github.com/goldeneggg/lsec2"
-  url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.6/lsec2_0.2.6_darwin_amd64.tar.gz"
-  version "0.2.6"
-  sha256 "205ae03e657748b40ee289716b09ee2237698e53e1ca6c4329124f2815858463"
+  url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.7/lsec2_0.2.7_darwin_amd64.tar.gz"
+  version "0.2.7"
+  sha256 "6941ccff81b4379f15199019af859d183eabf5eb83f1d4ad54e5f53825be5af6"
 
   def install
     bin.install "lsec2"
