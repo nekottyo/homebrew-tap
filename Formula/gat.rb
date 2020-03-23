@@ -2,9 +2,18 @@
 class Gat < Formula
   desc "Utility tool of concatnating and printing file to various services"
   homepage "https://github.com/goldeneggg/gat"
-  url "https://github.com/goldeneggg/gat/releases/download/v0.8.7/gat_0.8.7_darwin_amd64.tar.gz"
-  version "0.8.7"
-  sha256 "1c0d5ba888cd0f48c9ea15da7ae48551dc04e7b0ca2b7ca678cbcabfc7e544d4"
+  version "0.8.9"
+  bottle :unneeded
+
+  if OS.mac?
+    url "https://github.com/goldeneggg/gat/releases/download/v0.8.9/gat_0.8.9_darwin_amd64.tar.gz"
+    sha256 "269a076f4918ebea914931c41163f925511e86ff8d3cb041164c94b7e1225269"
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/goldeneggg/gat/releases/download/v0.8.9/gat_0.8.9_linux_amd64.tar.gz"
+      sha256 "15e10f19e6715bc360c6cab4dd6303076e1a05dbc9cc1acbb37d4e54e43ccd4f"
+    end
+  end
 
   def install
     bin.install "gat"
