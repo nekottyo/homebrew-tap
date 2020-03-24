@@ -2,16 +2,16 @@
 class Lsec2 < Formula
   desc "List view of aws ec2 instances"
   homepage "https://github.com/goldeneggg/lsec2"
-  version "0.2.10"
+  version "0.2.11"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.10/lsec2_0.2.10_darwin_amd64.tar.gz"
-    sha256 "dcec85bd187cb573236416e2aad6bf0716c9f2b48d0ddcb6dd24950e03cee562"
+    url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.11/lsec2_0.2.11_darwin_amd64.tar.gz"
+    sha256 "ca126ade9e995763ba04a2b9ded3b599c02e87852fc060d7b43df78ea90a0490"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.10/lsec2_0.2.10_linux_amd64.tar.gz"
-      sha256 "85e114b1f9372deb0a982ed135a77b873c0f4a74e9ab3aa15ef31a89f60f9b27"
+      url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.11/lsec2_0.2.11_linux_amd64.tar.gz"
+      sha256 "1a45d4a2d3c57c04fa1f956804ff516538968491ceef06522f93b5907c6f75dd"
     end
   end
 
