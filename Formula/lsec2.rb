@@ -3,7 +3,6 @@ class Lsec2 < Formula
   desc "List view of aws ec2 instances"
   homepage "https://github.com/goldeneggg/lsec2"
   version "0.2.11"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/goldeneggg/lsec2/releases/download/v0.2.11/lsec2_0.2.11_darwin_amd64.tar.gz"

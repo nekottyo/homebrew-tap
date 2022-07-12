@@ -3,7 +3,6 @@ class Gat < Formula
   desc "Utility tool of concatnating and printing file to various services"
   homepage "https://github.com/goldeneggg/gat"
   version "0.8.9"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/goldeneggg/gat/releases/download/v0.8.9/gat_0.8.9_darwin_amd64.tar.gz"
